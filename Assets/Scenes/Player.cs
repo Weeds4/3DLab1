@@ -58,7 +58,7 @@ public class player : MonoBehaviour
 
     IEnumerator ShowEnable()
     {
-        float scale = Random.Range(500.0f, 750.0f);
+        float scale = Random.Range(70.0f, 100.0f);
         muzzleFlash.transform.localScale = Vector3.one * scale;
         Quaternion rot = Quaternion.Euler(30.0f,0f, Random.Range(0f, 90.0f));
         muzzleFlash.enabled = true;
