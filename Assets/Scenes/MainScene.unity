@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 7416536dbe0334cfd888dd1beb75a9fb, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.181597, g: 0.2272444, b: 0.30741256, a: 1}
+  m_IndirectSpecularColor: {r: 0.11884108, g: 0.18339348, b: 0.32976314, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -806,6 +806,30 @@ Transform:
   - {fileID: 1099861735}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1369275386 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 837742623430575910, guid: 064a7a924ea0e4145bca3e13090edccd, type: 3}
+  m_PrefabInstance: {fileID: 1458116384}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1369275389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369275386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a06bd25f454bc4c4cbe200e2c19f4a7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BarreMaterials:
+  - {fileID: 2100000, guid: 45f14284a1f268545b186095188a14dd, type: 2}
+  - {fileID: 2100000, guid: 72ff9cd59def1d7448c809b2b7ec3319, type: 2}
+  - {fileID: 2100000, guid: f18a50063c9cd5b43ae924fa672cfc99, type: 2}
+  - {fileID: 2100000, guid: fc72eb6697f438a45923ce68d75e827e, type: 2}
+  - {fileID: 2100000, guid: 7b320659fd90e6440a5c94449bea8fef, type: 2}
+  HitCount: 5
 --- !u!1001 &1458116384
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -881,7 +905,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 837742623430575910, guid: 064a7a924ea0e4145bca3e13090edccd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1369275389}
   m_SourcePrefab: {fileID: 100100000, guid: 064a7a924ea0e4145bca3e13090edccd, type: 3}
 --- !u!1001 &1694072520
 PrefabInstance:
@@ -1022,7 +1049,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7673487251499248760, guid: c98043d57e0190845b790d7b92990bee, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1978689912}
+      addedObject: {fileID: 1978689915}
   m_SourcePrefab: {fileID: 100100000, guid: c98043d57e0190845b790d7b92990bee, type: 3}
 --- !u!1 &1978689910 stripped
 GameObject:
@@ -1034,7 +1061,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7673487251499544612, guid: c98043d57e0190845b790d7b92990bee, type: 3}
   m_PrefabInstance: {fileID: 1978689909}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1978689912
+--- !u!114 &1978689915
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

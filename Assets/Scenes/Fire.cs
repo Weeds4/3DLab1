@@ -21,9 +21,15 @@ public class Fire : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter(Collision other) {
+   void OnCollisionEnter(Collision other) {
         if(other.collider.tag == "Barrel"){
-            
+            // Destroy(other.gameObject);
+
+            var barrel = other.gameObject.GetComponent<Barrel>();
+            barrel.HitCount++;
+
+            Debug.Log($"드럼통 HITcout" + barrel.HitCount.ToString());
+            Destroy(gameObject);
         }
         
     }
